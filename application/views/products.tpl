@@ -311,12 +311,6 @@
 						<span style="width: 100%; margin-top: 2px; font-size: 11px">Laat dit veld leeg als u geen gebruik maakt van verzendkosten.</span>
 					</div>
 					
-					<div style="margin: 25px 0 0 0">
-						<h3 style="font-size: 13px">Voorraadbeheer</h3>
-						
-						{inputUseStock}
-					</div>
-					
 					
 					
 					[START formSubmit]

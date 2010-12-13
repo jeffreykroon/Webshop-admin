@@ -410,10 +410,6 @@ class products extends controller {
 		$this -> template -> assign('inputWeight', $form -> getOutput());
 		
 		
-		// Voorraadbeheer gebruiken
-		$form -> checkbox('use_stock', array('label' => 'Voorraadbeheer gebruiken', 'defaultChecked' => true), 'Product');
-		$this -> template -> assign('inputUseStock', $form -> getOutput());
-		
 		// Het BTW tarief wordt gechecked
 		$use_tax = ($this -> post['Product']['use_tax'] == 'false' ? false : true);
 		
