@@ -46,6 +46,7 @@ class controller extends template {
               }
          }
          
+         if (!isset($this -> noParentModel)) {
               // Het model wordt aangemaakt
               $model = ucfirst(strtolower(convert_table_name((url(1) ? url(1) : 'index'), 'join')));
               $modelName = $model . '_model';
@@ -58,6 +59,7 @@ class controller extends template {
                    echo 'Model <b>'. $modelName .'</b> niet gevonden';
                    exit;
               }
+         }
               
 
 
