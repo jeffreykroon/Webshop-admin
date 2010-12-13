@@ -14,6 +14,18 @@ class model {
         }
         
         // Er wordt gekeken of er nog overige models geïncluded moeten worden
+        if (isset($this -> belongsTo)) {
+        	foreach($this -> belongsTo as $model) {
+        		$name = ucfirst(strtolower(convert_table_name($model, 'join')));
+        		$className = $name . '_model';
+
+        		if (class_exists($className)) {
+        			$this -> {$name} = new $className();
+        		}
+        	}
+        }
+        
+        
         if (isset($this -> hasMany)) {
         	foreach($this -> hasMany as $model) {
         		$name = ucfirst(strtolower(convert_table_name($model, 'join')));
