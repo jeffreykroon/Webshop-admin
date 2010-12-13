@@ -1,0 +1,7 @@
+#overview {width: 100%; font-size: 12px}
+#overview h2 {font-size: 16px}
+#overview h3 {width: 100%; margin-top: 30px; font-size: 14px}
+
+#overview table {width: 100%; margin-top: 50px; font-size: 12px; color: #323232}
+#overview td {overflow: visible; padding: 10px 5px; cursor: pointer}
+.odd {background: #eaeaea}
