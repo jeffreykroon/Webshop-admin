@@ -61,7 +61,13 @@
 					
 					{inputPrdName}
 					{inputPrdSelect}
-					{inputOnline}
+					
+					<div id="divProductOnline" class="formDivPlaceholder">
+						<div class="formDivPlaceholderIn">
+							<label id="labelProductOnline">Tonen in webwinkel</label>
+							<input name="post[Product][online]" id="inputProductOnline" value="true" type="checkbox" {onlineChecked}>
+						</div>
+					</div>
 					
 					
 					<div style="width: 100%; height: 50px"> &nbsp; </div>

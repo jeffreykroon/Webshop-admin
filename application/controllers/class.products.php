@@ -389,10 +389,6 @@ class products extends controller {
 		// De selectie box voor de categorie
 		$form -> select('category_id', array('options' => $options, 'label' => 'Categorie'), 'Product');		
 		$this -> template -> assign('inputPrdSelect', $form -> getOutput());
-		
-		// De checkbox voor het product aftief / inactief
-		$form -> checkbox('online', array('label' => 'Tonen in webwinkel', 'defaultChecked' => true), 'Product');
-		$this -> template -> assign('inputOnline', $form -> getOutput());
 				
 		// De productnaam
 		$form -> text('name', array('label' => 'productnaam'), 'Product');
@@ -426,6 +422,16 @@ class products extends controller {
 			$this -> template -> assign('tax', $this -> post['Product']['tax']);			
 		} else {
 			$this -> template -> assign('localTax', 'checked');
+		}
+		
+		
+		// Er wordt bekeken of het product online is
+		if (isset($this -> post)) {
+			if ($this -> post['Product']['online'] == 'true') {
+				$this -> template -> assign('onlineChecked', 'checked');
+			}
+		} else {
+			$this -> template -> assign('onlineChecked', 'checked');
 		}
 		
 		

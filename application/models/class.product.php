@@ -74,6 +74,12 @@ class Product_model extends model {
     	if ($data['Product']['use_tax'] == 'false') {
     		$data['Product']['tax'] = null;
     	}
+    	
+    	// Er wordt bekeken of het product actief is
+    	$data['Product']['online'] = (!empty($data['Product']['online']) ? 'true' : 'false');
+    	
+    	// Er wordt bekeken of er voorraadbeheer gebruikt moet worden
+    	$data['Product']['use_stock'] = (!empty($data['Product']['use_stock']) ? 'true' : 'false');
 
     	return $data;
     }
