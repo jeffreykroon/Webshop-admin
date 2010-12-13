@@ -16,7 +16,6 @@ class imageHandlerPlugin extends plugin {
 		
 		foreach($dirs as $dir) {
 			$permision = fileperms(__DATA__ . $dir);
-			set_option('perm', $permision);
 		}
 		
 	}
