@@ -11,7 +11,7 @@ a {text-decoration: none}
 .no_float {float: none}
 
 /* Container */
-#container {margin: 0 auto; width: 800px; display: block}
+#container {margin: 0 auto; width: 1000px; display: block}
 
 /* Header */
 #header {width: 100%; height: 200px; background: url('/images/header_background.jpg')}
@@ -48,7 +48,7 @@ a {text-decoration: none}
 
 
 /* Content */
-#content {padding: 10px 10px 0 30px; width: 565px}
+#content {padding: 10px 10px 0 30px; width: 785px}
 #lightbox {border: 1px solid #cacaca}
 
 .info {width: 100%; margin-bottom: 30px}
