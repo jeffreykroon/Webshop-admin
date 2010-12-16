@@ -14,10 +14,17 @@ class orders extends controller {
 		
 		$this -> template -> newBlock('overview');
 		
-		for($i=0;$i<20;++$i) {
+		for($i=0;$i<10;++$i) {
 			$this -> template -> newBlock('overview_item');
 			$this -> template -> assign('class', ($i&1 ? 'odd' : ''));
 		}
+		
+	}
+	
+	
+	public function show() {
+		
+		$this -> template -> newBlock('show');
 		
 	}
 	

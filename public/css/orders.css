@@ -1,7 +1,32 @@
-#overview {width: 100%; font-size: 12px}
-#overview h2 {font-size: 16px}
+#overview {width: 100%; font-size: 12px; color: #323232}
+#overview h2 {font-size: 15px; width: 100%}
 #overview h3 {width: 100%; margin-top: 30px; font-size: 14px}
 
-#overview table {width: 100%; margin-top: 50px; font-size: 12px; color: #323232}
-#overview td {overflow: visible; padding: 10px 5px; cursor: pointer}
-.odd {background: #eaeaea}
+#overview table {width: 100%; margin-top: 50px; font-size: 12px}
+#overview td {overflow: visible; padding: 10px 5px; cursor: pointer; border-bottom: 1px solid #c6d3d8}
+
+
+#show {width: 100%; font-size: 12px}
+#show h2 {font-size: 15px; width: 100%; margin-bottom: 10px} h2 {font-size: 15px; width: 100%; margin-bottom: 10px}
+
+#open_options {margin-top: 20px}
+
+#show_opts {width: 100%; margin-top: 25px}
+#show_opts table {width: 390px; margin: 0; padding: 0; font-size: 12px; float: left;}
+#show_opts td {width: 195px; padding: 3px 0}
+
+#show_products {margin-top: 50px}
+#show_products table {font-size: 12px}
+#show_products td {padding: 5px}
+#show_products ul {width: 100%}
+#show_products li {padding-bottom: 5px}
+.odd {background: #ddf2fa}
+.tb_a {margin: 18px 0 0 5px; color: #000000; font-weight: bold; text-decoration: underline}
+
+#factuur_data {margin-top: 50px; width: 385px}
+#factuur_data table {font-size: 12px}
+#factuur_data td {padding: 3px 5px}
+
+#delivery_data {margin-top: 50px; width: 385px}
+#delivery_data table {font-size: 12px}
+#delivery_data td {padding: 3px 5px}
